@@ -1,0 +1,159 @@
+/* Games container layout */
+.games-container {
+    display: flex;
+    height: 100vh;
+    background-color: #0B0D25; /* Dark background color */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 400px;
+    background-color: #1E1F30;
+    color: white;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-200px); /* Sidebar hidden */
+    transition: transform 0.3s ease;
+    z-index: 100;
+}
+
+.sidebar.open {
+    transform: translateX(0); /* Sidebar visible */
+}
+
+.sidebar.closed {
+    transform: translateX(-400px); /* Sidebar hidden */
+}
+
+/* Toggle button (Hamburger and Close icons) */
+.sidebar-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 110;
+    font-size: 2rem; /* Adjust size of the icon */
+    color: white;
+}
+
+/* Sidebar buttons container */
+.sidebar-buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Sidebar buttons */
+.game-deposit-button {
+    background-color: #0C0C22; /* Dark background for the button */
+    color: #FFFFFF; /* White text */
+    border: none;
+    padding: 15px 20px;
+    text-align: center; /* Center the text inside the button */
+    margin-bottom: 10px;
+    font-size: 1.2rem; /* Slightly larger font for better readability */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 8px; /* Rounded corners for the button */
+    margin-top: 0px;
+}
+.game-withdraw-button {
+    background-color: #0C0C22; /* Dark background for the button */
+    color: #FFFFFF; /* White text */
+    border: none;
+    padding: 15px 20px;
+    text-align: center; /* Center the text inside the button */
+    margin-bottom: 10px;
+    font-size: 1.2rem; /* Slightly larger font for better readability */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 8px; /* Rounded corners for the button */
+    margin-top: 0px;
+}
+
+.game-home-button {
+    background-color: #0C0C22; /* Dark background for the button */
+    color: #FFFFFF; /* White text */
+    border: none;
+    padding: 15px 20px;
+    text-align: center; /* Center the text inside the button */
+    margin-bottom: 10px;
+    font-size: 1.2rem; /* Slightly larger font for better readability */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 8px; /* Rounded corners for the button */
+    margin-top: 100px;
+}
+
+
+/* Hover effect */
+.sidebar-button:hover {
+    background-color: #292A3A; /* Slightly lighter color on hover */
+}
+/* Style for the hamburger icon */
+.hamburger-icon {
+    display: block;
+}
+
+/* Style for the close icon */
+.close-icon {
+    display: block;
+}
+
+.menu-icon {
+    width: 60px;
+    height: 60px;
+    background: url('./assets/ham_icon.png') center center no-repeat;
+    background-size: contain;
+    margin-top: 30px;
+}
+
+
+
+/* Main content area */
+.games-content {
+    margin-left: 275px; /* Adjust this based on the sidebar's width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.games-title {
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 400px;
+    margin-left: -1250px;
+    font-family: 'TT Octosquares Trl', sans-serif; /* Font family */
+                                                    
+}
+
+/* Game grid */
+.games-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-left: -200px;
+    margin-top: -400px;
+}
+
+.game-card {
+    position: relative;
+    width: 305px;
+    height: 350px;
+}
+
+.game-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}

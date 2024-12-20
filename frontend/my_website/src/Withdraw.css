@@ -1,0 +1,201 @@
+.withdraw-container {
+    background-color: #0e0e2c;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the options horizontally */
+    justify-content: center; /* Center the content vertically */
+    height: 100vh; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    position: relative; /* For absolute positioning of the titles */
+}
+
+.withdraw-title {
+    font-size: 32px;
+    color: white;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    margin: 0; /* Remove default margin */
+}
+
+.crypto-title {
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    top: 125px; /* Adjust this value to control spacing between Deposit and Cryptocurrency */
+    left: 270px;
+    margin: 0;
+}
+
+.crypto-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    width: 100%; /* Full width */
+    max-width: 600px; /* Restrict max width */
+    justify-content: center; /* Center vertically */
+
+}
+
+.crypto-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #333344;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid transparent;
+    width: 150%; /* Full width of container */
+}
+
+.crypto-item:hover {
+    background-color: #444455;
+}
+
+.crypto-item.selected {
+    border: 2px solid #8855ff; /* Highlight selected item */
+}
+
+.crypto-symbol {
+    font-size: 30px;
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+}
+
+.crypto-name {
+    font-size: 18px;
+    color: white;
+}
+
+
+.withdraw-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color:transparent; /* Transparent background */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 50px;            /* Increase the height for a thicker navbar */
+  
+  }
+  
+  
+  /* Sidebar */
+  .sidebar {
+    width: 400px;
+    background-color:1E1F30;
+    color: white;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-200px); /* Sidebar hidden */
+    transition: transform 0.3s ease;
+    z-index: 100;
+  }
+  
+  .sidebar.open {
+    transform: translateX(0); /* Sidebar visible */
+  }
+  
+  .sidebar.closed {
+    transform: translateX(-400px); /* Sidebar hidden */
+  }
+  
+  /* Toggle button (Hamburger and Close icons) */
+  .sidebar-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 110;
+    font-size: 2rem; /* Adjust size of the icon */
+    color: white;
+  }
+  
+  /* Sidebar buttons container */
+  .withdraw-sidebar-buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  /* Sidebar buttons */
+
+  .withdraw-deposit-button {
+    background-color: #0C0C22; /* Dark background for the button */
+    color: #FFFFFF; /* White text */
+    border: none;
+    padding: 15px 20px;
+    text-align: center; /* Center the text inside the button */
+    margin-bottom: 10px;
+    font-size: 1.2rem; /* Slightly larger font for better readability */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 8px; /* Rounded corners for the button */
+    margin-top: 10px;
+  }
+  .withdraw-game-button {
+    background-color: #0C0C22; /* Dark background for the button */
+    color: #FFFFFF; /* White text */
+    border: none;
+    padding: 15px 20px;
+    text-align: center; /* Center the text inside the button */
+    margin-bottom: 10px;
+    font-size: 1.2rem; /* Slightly larger font for better readability */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 8px; /* Rounded corners for the button */
+    margin-top: 0px;
+  }
+
+  .withdraw-home-button {
+    background-color: #0C0C22; /* Dark background for the button */
+    color: #FFFFFF; /* White text */
+    border: none;
+    padding: 15px 20px;
+    text-align: center; /* Center the text inside the button */
+    margin-top: 200px;
+    font-size: 1.2rem; /* Slightly larger font for better readability */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 8px; /* Rounded corners for the button */
+    margin-top: 100px;
+  }
+  
+  
+  
+  /* Hover effect */
+  .sidebar-button:hover {
+    background-color: #292A3A; /* Slightly lighter color on hover */
+  }
+  .menu-icon {
+    width: 50px;
+    height: 50px;
+    background: url('./assets/ham_icon.png') center center no-repeat;
+    background-size: contain;
+    margin-top: 0px;
+  }
+  
+  .hamburger-menu {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+  }
+  

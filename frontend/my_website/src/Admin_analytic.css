@@ -1,0 +1,72 @@
+/* Full page layout with table taking full width/height but without overlapping the navbar */
+
+/* Navbar styling */
+.admin-analytic-navbar {
+    display: flex;
+    align-items: center;
+    background-color: rgb(197, 223, 243);
+    padding: 10px 20px;
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    height: 60px;
+  }
+  
+  .admin-analytic-navbar h1 {
+    color: #5271FF;
+    font-size: 40px;
+    font-family: 'TT Octosquares Trl', sans-serif; /* Font family */
+
+  }
+
+  
+  
+  .admin-analytic-navbar nav {
+    display: flex;
+    gap: 100px;
+    margin-left: 200px;
+    margin-top: 10px;
+  }
+  
+  .admin-analytic-navbar button {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: #3277ba;
+    cursor: pointer;
+  }
+  
+  .admin-analytic-navbar button:hover {
+    border-radius: 10px;
+    background-color: white;
+  }
+  
+  /* Main content container */
+  .admin-analytic-container {
+    padding-top: 70px; /* Adds padding to avoid overlapping with navbar */
+    height: 100vh; /* Full height of the viewport */
+    overflow: auto; /* Allows scrolling if content overflows */
+    width:100vw;
+    background-color: white;
+    background-color: rgb(197, 223, 243);
+
+  }
+  
+
+
+
+  /* Fullscreen background image */
+  .admin-analytic-image-background {
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+  
+  
+
+  .admin-analytic-background-img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    opacity: 0.9; /* Optional: make the image slightly transparent */
+  }

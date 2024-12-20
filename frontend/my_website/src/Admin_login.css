@@ -1,0 +1,100 @@
+/* Container styling */
+.admin-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #A9D3F6; /* Light blue background */
+}
+
+/* Login box styling */
+.admin-login-box {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    height:300px;
+}
+
+.title-container {
+    display: flex;
+    align-items: center; /* Align title and text to the center vertically */
+    justify-content: center;
+    gap: 10px; /* Space between title and right text */
+    margin-bottom: 10px; /* Adjust for space under the title */
+}
+
+/* Title NPJ888 styling */
+.title {
+    font-size: 50px;
+    color: #4b6fc9; /* Light blue color */
+    margin-right: 10px; /* Space between title and other text */
+    font-family: 'TT Octosquares Trl', sans-serif; /* Font family */
+    font-weight: bold;
+}
+
+/* Admin login and Casino name container */
+.right-text {
+    text-align: left;
+    margin-bottom: -100px;
+}
+
+/* Admin login text styling */
+.admin-login {
+    font-size: 13px;
+    color: black;
+    font-weight: bold;
+    margin: 0;
+    position: relative; /* Allow positioning */
+    padding-bottom:50%; /* Adjust this as needed */
+    font-family: 'TT Octosquares Trl', sans-serif; /* Font family */
+
+}
+
+/* Bitcoin Casino text styling */
+.casino-name {
+    font-size: 14px;
+    color: #4b6fc9;
+    margin-top: -70px;
+    padding-bottom:50%; /* Adjust this as needed */
+    font-family: 'TT Octosquares Trl', sans-serif; /* Font family */
+
+
+}
+
+/* Input fields styling */
+.admin-login-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #d3d3d3; /* Grey background */
+    font-size: 16px;
+    color: black;
+    margin-top: -100px;
+    position: 10px;
+    margin-left:-10px;
+}
+
+/* Login button styling */
+.admin-login-button {
+    width: 150px;
+    padding: 12px;
+    border-radius: 40px;
+    border: none;
+    background-color: #4b6fc9; /* Blue button */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 230px;
+
+}
+
+.admin-login-button:hover {
+    background-color: hsl(225, 55%, 45%); /* Darker blue on hover */
+    color: white;
+}

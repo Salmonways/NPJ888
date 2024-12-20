@@ -1,0 +1,98 @@
+/* Full-page container with larger dimensions */
+.leaderboard-container {
+    background-color: transparent;
+    color: white;
+    padding: 20px;
+    font-family: 'TT Octosquares Trl', sans-serif; /* Font family */
+    height: 100vh; /* Full height of the viewport */
+    width: 180vh; /* Width extended for large container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0; /* Remove default margins */
+}
+
+.leaderboard-container h2 {
+    text-align: left;
+    font-size: 36px; /* Increased font size */
+    margin-bottom: 40px; /* Increased margin for spacing */
+    margin-left: -1000px; /* Adjusted margin to align the title */
+    font-size: 50px;
+
+}
+
+.winner-section {
+    display: flex;
+    justify-content: space-around;
+    width: 85%; /* Adjust the width to fit within the viewport */
+    max-width: 1400px; /* Increased max-width */
+}
+
+.winner-day, .winner-month {
+    background-color: transparent;
+    padding: 30px; /* Increased padding for larger sections */
+    border-radius: 8px;
+    width: 48%; /* Slightly increased width */
+    margin-top: -60px;
+}
+
+h3 {
+    font-size: 28px; /* Larger font size for subheaders */
+    margin-bottom: 20px; /* More spacing under subheaders */
+}
+
+.winner-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #aa3d32;
+    border-radius: 8px;
+    padding: 20px; /* Increased padding for bigger cards */
+    margin-bottom: 20px; /* More margin between cards */
+    color: white;
+    font-size: 22px; /* Larger font size in cards */
+}
+
+.winner-card:nth-child(odd) {
+    background-color: #6e2e25;
+}
+
+.winner-info {
+    display: flex;
+    align-items: center;
+}
+
+.winner-icon {
+    font-size: 40px; /* Increased icon size */
+    margin-right: 15px; /* Increased margin to separate icon from text */
+}
+
+.winner-user,
+.winner-profit {
+  flex-direction: column;
+  margin: 0; /* Remove default margins */
+}
+
+.winner-user span,
+.winner-profit span {
+  margin: 100px; /* Remove any margin */
+  padding: 0; /* Remove any padding */
+  gap: -100px;
+}
+
+.winner-user span:first-child,
+.winner-profit span:first-child {
+  margin-bottom: 100px; /* Add a small gap between label and value */
+}
+.winner-user {
+    font-weight: bold;
+    font-size: 24px; /* Larger user font */
+}
+
+.winner-profit {
+    font-weight: bold;
+    font-size: 24px; /* Larger profit font */
+    margin-left: -100px;
+}

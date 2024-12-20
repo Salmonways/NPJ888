@@ -1,0 +1,115 @@
+/* Full page layout with table taking full width/height but without overlapping the navbar */
+
+/* Navbar styling */
+.admin-game-navbar {
+    display: flex;
+    align-items: center;
+    background-color: #A9D3F6;
+    padding: 10px 20px;
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    height: 60px;
+  }
+  
+  .admin-game-navbar h1 {
+    color: #5271FF;
+    font-size: 40px;
+    font-family: 'TT Octosquares Trl', sans-serif; /* Font family */
+  }
+  
+  .admin-game-navbar nav {
+    display: flex;
+    gap: 100px;
+    margin-left: 200px;
+    margin-top: 10px;
+  }
+  
+  .admin-game-navbar button {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: #3277ba;
+    cursor: pointer;
+  }
+  
+  .admin-game-navbar button:hover {
+    border-radius: 10px;
+    background-color: white;
+  }
+  
+  /* Main content container */
+  .admin-game-dashboard-container {
+    padding-top: 70px; /* Adds padding to avoid overlapping with navbar */
+    height: 100vh; /* Full height of the viewport */
+    overflow: auto; /* Allows scrolling if content overflows */
+    width:100vw;
+    background-color: white;
+  }
+  
+  /* Table styling */
+  .admin-game-users-table {
+    width: 100%;
+    border-collapse: collapse;
+
+  }
+  
+  .admin-game-users-table th, .admin-game-users-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #535381;
+  }
+  
+  .admin-game-users-table th {
+    background-color: #e5f0ff;
+    color: #535381;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .admin-game-users-table td {
+    font-size: 15px;
+    color: #333;
+  }
+  
+  .admin-game-users-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .admin-game-users-table tr:nth-child(odd) {
+    background-color: #eef3ff;
+  }
+  
+  .admin-game-users-table tr:hover {
+    background-color: #d9e9ff;
+  }
+  
+  /* Buttons styling */
+  .admin-game-delete-button {
+    background-color: #ff4d4d; /* Red color */
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .admin-game-delete-button:hover {
+    background-color: #e60000; /* Darker red on hover */
+  }
+  
+  .admin-game-status-button {
+    background-color: #ffaa00; /* Orange color */
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .admin-game-status-button:hover {
+    background-color: #e68a00; /* Darker orange on hover */
+  }

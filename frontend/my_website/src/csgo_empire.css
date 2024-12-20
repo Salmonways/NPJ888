@@ -1,0 +1,339 @@
+/* Make the game page cover the entire screen with smaller scaling */
+.game-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    background-color: #1a1a2e;
+    color: white;
+    overflow: hidden; /* Prevent scrolling if content overflows */
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.8rem; /* Smaller base font size */
+}
+
+/* Header */
+.game-header {
+    background-color: #82828D;
+    padding: 5px; /* Smaller padding */
+    color: #ffcc00;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    height: 70px;
+    flex-direction: row;
+    display: inline-flex; /* Inline-flex to keep the icon and text in the same row */
+    align-items: center; /* Vertically center the icon and text */
+    gap: 40px; /* Space between the icon and text */
+    font-size: 20px; /* You can adjust the text size */
+    font-weight: bold;
+
+}
+
+.game-header h1, .header-icon{
+    margin-left: 40px;
+}
+.game-header h1 {
+    display: inline-flex; /* Keep the icon and text in the same row */
+    align-items: center; /* Vertically center the icon and text */
+    gap: 10px; /* Space between the icon and text */
+    font-size: 24px; /* Adjust the text size as needed */
+    font-weight: bold;
+    position: relative;
+    top: 5px; /* Move the text up slightly */
+}
+
+.header-icon {
+    top: 10px;
+    width: 40px; /* Adjust the size to fit nicely */
+    height: 40px;
+}
+
+.csgo-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color:transparent; /* Transparent background */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 50px;            /* Increase the height for a thicker navbar */
+  
+  }
+  
+  
+  /* Sidebar */
+  .sidebar {
+    width: 400px;
+    background-color:1E1F30;
+    color: white;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-200px); /* Sidebar hidden */
+    transition: transform 0.3s ease;
+    z-index: 100;
+  }
+  
+  .sidebar.open {
+    transform: translateX(0); /* Sidebar visible */
+  }
+  
+  .sidebar.closed {
+    transform: translateX(-400px); /* Sidebar hidden */
+  }
+  
+  /* Toggle button (Hamburger and Close icons) */
+  .sidebar-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 110;
+    font-size: 2rem; /* Adjust size of the icon */
+    color: white;
+  }
+  
+  /* Sidebar buttons container */
+  .csgo-sidebar-buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  /* Sidebar buttons */
+  .csgo-deposit-button {
+    background-color: #0C0C22; /* Dark background for the button */
+    color: #FFFFFF; /* White text */
+    border: none;
+    padding: 15px 20px;
+    text-align: center; /* Center the text inside the button */
+    margin-bottom: 10px;
+    font-size: 1.2rem; /* Slightly larger font for better readability */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 8px; /* Rounded corners for the button */
+    margin-top:10px;
+  }
+  .csgo-withdraw-button {
+    background-color: #0C0C22; /* Dark background for the button */
+    color: #FFFFFF; /* White text */
+    border: none;
+    padding: 15px 20px;
+    text-align: center; /* Center the text inside the button */
+    margin-bottom: 10px;
+    font-size: 1.2rem; /* Slightly larger font for better readability */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 8px; /* Rounded corners for the button */
+    margin-top: 0px;
+  }
+  .csgo-game-button {
+    background-color: #0C0C22; /* Dark background for the button */
+    color: #FFFFFF; /* White text */
+    border: none;
+    padding: 15px 20px;
+    text-align: center; /* Center the text inside the button */
+    margin-bottom: 10px;
+    font-size: 1.2rem; /* Slightly larger font for better readability */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 8px; /* Rounded corners for the button */
+    margin-top: 0px;
+  }
+  .csgo-leaderboard-button {
+    background-color: #0C0C22; /* Dark background for the button */
+    color: #FFFFFF; /* White text */
+    border: none;
+    padding: 15px 20px;
+    text-align: center; /* Center the text inside the button */
+    margin-bottom: 10px;
+    font-size: 1.2rem; /* Slightly larger font for better readability */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 8px; /* Rounded corners for the button */
+    margin-top: 0px;
+  }
+  .csgo-home-button {
+    background-color: #0C0C22; /* Dark background for the button */
+    color: #FFFFFF; /* White text */
+    border: none;
+    padding: 15px 20px;
+    text-align: center; /* Center the text inside the button */
+    margin-top: 200px;
+    font-size: 1.2rem; /* Slightly larger font for better readability */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 8px; /* Rounded corners for the button */
+    margin-top: 100px;
+  }
+  
+  
+  
+  /* Hover effect */
+  .sidebar-button:hover {
+    background-color: #292A3A; /* Slightly lighter color on hover */
+  }
+  .menu-icon {
+    width: 50px;
+    height: 50px;
+    background: url('./assets/ham_icon.png') center center no-repeat;
+    background-size: contain;
+    margin-top: 0px;
+  }
+  
+  .hamburger-menu {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+  }
+  
+
+/* Rolling Section */
+.rolling-section {
+    margin-top:-100px;
+}
+
+/* Previous Rolls */
+.previous-rolls-section {
+    margin-top:-100px; /* Use negative margin to move it up further */
+    padding: 0; /* Remove padding */
+}
+.rolling-indicator {
+    font-size: 16px; /* Smaller font size */
+    margin-bottom: 5px; /* Smaller margin */
+}
+
+.roll-symbols {
+    display: flex;
+    justify-content: center;
+    gap: 5px; /* Smaller gap */
+}
+
+.roll-symbol {
+    font-size: 24px; /* Smaller font size */
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 5px; /* Smaller padding */
+    width: 40px; /* Smaller size */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.previous-rolls {
+    display: flex;
+    justify-content: center;
+    gap: 5px; /* Smaller gap */
+}
+
+.previous-roll {
+    font-size: 20px; /* Smaller font size */
+    background-color: #32374d;
+    padding: 6px; /* Smaller padding */
+    border-radius: 6px; /* Reduced border radius */
+
+}
+
+/* Bet Controls */
+.bet-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -100px;  
+}
+
+.bet-controls input {
+    width: 140px; /* Smaller width */
+    padding: 6px; /* Smaller padding */
+    font-size: 14px; /* Smaller font size */
+    margin-bottom: 5px; /* Smaller bottom margin */
+}
+
+.bet-buttons {
+    display: flex;
+    gap: 5px; /* Smaller gap */
+}
+
+.bet-buttons button {
+    background-color: #32374d;
+    border: none;
+    color: white;
+    padding: 6px; /* Smaller padding */
+    cursor: pointer;
+    font-size: 12px; /* Smaller font size */
+    transition: background-color 0.3s;
+}
+
+.bet-buttons button:hover {
+    background-color: #ffcc00;
+}
+
+.bet-controls p {
+    color: white; /* Text color for balance */
+    margin-top: 10px; /* Space above the balance */
+    font-size: 14px; /* Font size */
+}
+
+/* Total Bets Section */
+.total-bets-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -100px; /* Further reduced margin */
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.bet-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0; /* Adjust margins as needed */
+}
+
+.bet-box button {
+    background-color: #32374d; /* Background color */
+    border: none; /* Remove default border */
+    color: white; /* Text color */
+    padding: 10px; /* Padding for the button */
+    cursor: pointer; /* Cursor changes to pointer */
+    font-size: 16px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background transition */
+    width:200px;
+}
+
+.bet-box button:hover {
+    background-color: #ffcc00; /* Change background on hover */
+}
+
+/* csgo_empire.css */
+
+/* Add these styles for rolling animation */
+.roll-symbol {
+    font-size: 2rem;
+    transition: transform 0.1s;
+}
+
+.rolling-active {
+    animation: rollAnimation 0.1s infinite; /* Run the rolling animation */
+}
+
+@keyframes rollAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

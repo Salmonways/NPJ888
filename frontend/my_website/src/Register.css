@@ -1,0 +1,170 @@
+.register-container {
+    display: flex;
+    height: 100vh;            /* Full height of the viewport */
+    width: 100%;              /* Full width of the page */
+}
+
+
+
+.left-half {
+    display: flex;
+    justify-content: center;   /* Horizontally centers the image */
+    align-items: center;       /* Vertically centers the image */
+}
+
+.right-half {
+    margin-top: -100;
+    margin-left: 200;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;   /* Center the text vertically */
+    align-items: flex-start;   /* Align text to the left */
+}
+.right-half h1 {
+    font-family: 'TT Octosquares Trl Cnd', sans-serif;   /* Use the Google Font */
+    font-size: 50px; /* Set the font size */
+    color: #9a24e3; /* Change the text color */
+    margin-top: 20px; /* Adjust top margin */
+    margin-right: -100px; /* Adjust right margin */
+}
+.right-half h2 {
+    font-family: 'TT Octosquares Trl Cnd', sans-serif;   /* Use the Google Font */
+    font-size: 20px; /* Set the font size */
+    color: #9a24e3; /* Change the text color */
+    margin-top: -50px; /* Adjust top margin */
+    margin-right: -100px; /* Adjust right margin */
+}
+.register-image {
+
+    width: 700px;               /* Maintain the aspect ratio */
+}
+
+
+
+
+
+.username-input {
+    color:rgb(255, 255, 255);
+    width: 125%; /* Set width of the input box */
+    padding: 10px 10px 10px 40px;
+    margin-top: 20px; /* Space above the input box */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 20px; /* Font size */
+    font-family: 'TT Octosquares Trl', sans-serif; /* Font family */
+    background-color: #9797a6; /* Light gray background color */
+
+    
+}
+.username-wrapper {
+    position: relative;
+    width: 80%;
+    margin-bottom: 20px;
+}
+.username-wrapper .icon {
+    position: absolute;
+    left: 12px;
+    top:65%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+
+
+
+.email-input {
+    color:rgb(255, 255, 255);
+    width: 125%; /* Set width of the input box */
+    padding: 10px 10px 10px 40px;
+    margin-top: -10px; /* Space above the input box */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 20px; /* Font size */
+    font-family: 'TT Octosquares Trl', sans-serif; /* Font family */
+    background-color: #9797a6; /* Light gray background color */
+
+    
+}
+.email-wrapper {
+    position: relative;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.email-wrapper .icon {
+    position: absolute;
+    left: 12px;
+    top:40%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+
+
+
+.password-wrapper {
+    position: relative;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.password-wrapper .icon {
+    position: absolute;
+    left: 12px;
+    top:40%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #ffffff;
+}
+.register_password-input {
+    color:rgb(255, 255, 255);
+    width:125%; /* Set width of the input box */
+    padding: 10px 10px 10px 40px;
+    margin-top: -10px; /* Space above the input box */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 20px; /* Font size */
+    font-family: 'TT Octosquares Trl', sans-serif; /* Font family */
+    background-color: #9797a6; /* Light gray background color */
+    
+}
+
+
+
+
+.signup-button {
+    width: 150px;
+    background-color: #9a24e3; /* Green */
+    border: none;
+    color: white;
+    font-family: 'TT Octosquares Trl', sans-serif; /* Font family */
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 50px;
+    border-radius: 20px; /* Rounded corners */
+} 
+.signup-button:hover {
+    background-color:white; /* Darker green on hover */
+    color: #9a24e3;
+}
+.register-option{
+    font-family: 'TT Octosquares Trl', sans-serif; /* Font family */
+
+}
+
+
+
+
+.register-link {
+    color: blue;
+    text-decoration: underline;
+}
+
+.terms-radio {
+    margin-right: 15px;
+    transform: scale(2); /* Scales the radio button */
+}
