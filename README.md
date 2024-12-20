@@ -1,5 +1,5 @@
 # NPJ888
-- Database management projet(3rd year project)
+- Database management project(3rd year project)
 - Developed by: Mr. Poramat Ponglimagorn Mr.Nutthawee Charoenngampis Ms. Khajeepan Usaha
 - Technologies used: React.js, Node.js, Express js, MySQL
 - NPJ888 is an online gambling platform designed for educational purposes. The
